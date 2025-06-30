@@ -1,0 +1,8 @@
+# Python virtual environment
+backend/venv/
+
+# Environment variables
+backend/.env
+
+# Storage for FAISS index
+backend/storage/
