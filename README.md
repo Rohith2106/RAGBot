@@ -17,7 +17,7 @@ The backend is built with **FastAPI** and **LlamaIndex**, using a **FAISS** vect
 
 - **Interactive Chat Interface**: A clean and simple UI to interact with the RAG pipeline.
 - **Local First**: Powered entirely by local LLMs via Ollama, ensuring privacy and offline capability.
-- **Bring Your Own Data**: Ingests and indexes your own documents (PDFs, TXT, etc.) as the knowledge base.
+- **Bring Your Own Data**: Ingests and indexes your own documents (PDFs only) as the knowledge base.
 - **Persistent Vector Storage**: Uses FAISS to create and persist a vector index, ensuring fast retrieval on subsequent runs.
 - **Asynchronous Backend**: Built with FastAPI for high performance.
 - **Hot-Reloading**: Enabled for both frontend and backend for a smooth development experience.
@@ -113,13 +113,6 @@ The application follows a standard RAG pipeline:
 4.  **Querying**: When you send a message from the frontend, it hits the `/api/query_stream` endpoint. The query is converted into an embedding, which is used to search the FAISS index for the most relevant document chunks.
 5.  **Generation**: The retrieved context and your original query are passed to the Ollama LLM, which generates a context-aware response that is streamed back to the UI.
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to open an issue or submit a pull request.
-
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4.  Push to the Branch (`git push origin feature/AmazingFeature`)
 5.  Open a Pull Request
 
