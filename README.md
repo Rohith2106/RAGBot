@@ -113,9 +113,3 @@ The application follows a standard RAG pipeline:
 4.  **Querying**: When you send a message from the frontend, it hits the `/api/query_stream` endpoint. The query is converted into an embedding, which is used to search the FAISS index for the most relevant document chunks.
 5.  **Generation**: The retrieved context and your original query are passed to the Ollama LLM, which generates a context-aware response that is streamed back to the UI.
 
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
