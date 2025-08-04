@@ -47,7 +47,7 @@ Ensure you have the following installed:
 
 **1. Clone the Repository**
 ```bash
-git clone https://github.com/your-username/RAGBot.git
+git clone https://github.com/Rohith2106/RAGBot.git
 cd RAGBot
 ```
 
